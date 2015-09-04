@@ -1,0 +1,68 @@
+
+html {
+  height: 100%;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  background-color: #fff; color: #222;
+  font-family: Source Sans Pro;
+
+}
+
+
+h1 {
+  margin: 0;
+  font-family: Lilita One;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+}
+
+/*
+.container {
+  position: relative;
+}
+*/
+
+section {
+  width: 100%; height: 100vh;
+  /*background-color: #222; color: #ccc;*/
+}
+
+section#title {
+  overflow: hidden;
+  background-image: url("../../img/36092-2.jpg");
+  background-size: cover;
+}
+
+section#title h1 {
+  display: block; position: relative;
+  top: 40%; left: -1000px;
+  width: calc(100% + 2000px);
+  color: #fff;
+  font-family: Lilita One; font-size: 5rem;
+  text-align: center; white-space: nowrap;
+  overflow: hidden;
+  cursor: default;
+
+}
+
+h1 {
+ letter-spacing: 10rem;
+ animation-name: animation1;
+ animation-delay: 0.25s;
+ animation-duration: 0.75s;
+ animation-timing-function: ease-in;
+ animation-fill-mode: forwards;
+}
+
+
+@-moz-keyframes animation1 {
+  0% { letter-spacing: 10rem; }
+  100% { letter-spacing: 0rem; }
+}
+
+section.text {
+  margin-top: 72px; margin-bottom: 72px;
+}
