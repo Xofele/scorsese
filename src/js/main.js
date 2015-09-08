@@ -12,26 +12,14 @@ $(function () {
   });
 
 
-  // $(window).on("resize", resize).trigger("resize");
+  $("#map").sticky({ topSpacing: -500 });
+
+
+  $("#map").on("sticky-start", function () { console.log("Sticky start"); });
+  $("#map").on("sticky-end", function () { console.log("Sticky end"); });
+
+
 
 
 });
-
-
-
-
-
-
-// function resize () {
-//   var vh, vw, vr;
-//   vh = document.documentElement.clientHeight;
-//   vw = document.documentElement.clientWidth;
-//   vr = vh / vw;
-//   $("#map").css({ position: "relative", width: px(vw), height: px(vh) });
-// }
-
-// function px (v) {
-//   return v + "px";
-// }
-
 
