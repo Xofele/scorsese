@@ -12,8 +12,7 @@ $(function () {
   });
 
 
-  $("#map").sticky({ topSpacing: -500 });
-
+  $("#map").sticky({});
 
   $("#map").on("sticky-start", function () { console.log("Sticky start"); });
   $("#map").on("sticky-end", function () { console.log("Sticky end"); });
