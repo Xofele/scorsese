@@ -1,32 +1,4 @@
 
-
-/*
-var places = [
-  { id: 1, groupId: 1, lat: 40.72358, lng: -73.99518, film: "Mean Streets", name: "Vieille cathédrale Saint-Patrick" },
-  { id: 2, groupId: 1, lat: 40.72176, lng: -73.99707, film: "Mean Streets", name: "Volpe Bar" },
-  { id: 3, groupId: 1, lat: 40.71816, lng: -73.99794, film: "Mean Streets", name: "Mulberry St and Hester St" },
-  { id: 4, groupId: 1, lat: 40.7181, lng: -74.0128, film: "Mean Streets", name: "The Bridge" },
-  { id: 5, groupId: 1, lat: 40.7193, lng: -73.99732, film: "Mean Streets", name: "Mulberry St" },
-  { id: 6, groupId: 1, lat: 40.72075, lng: -73.9971, film: "Mean Streets", name: "394 Broome St" },
-  { id: 7, groupId: 1, lat: 40.7312, lng: -74.00167, film: "Mean Streets", name: "323 6th Ave - Waverly Theater" },
-  { id: 8, groupId: 2, lat: 40.76987, lng: -73.99031, film: "Taxi Driver", name: "W57th Street" },
-  { id: 9, groupId: 2, lat: 40.76041, lng: -73.98745, film: "Taxi Driver", name: "8th Ave &amp; W47th St." },
-  { id: 10, groupId: 2, lat: 40.75992, lng: -73.98782, film: "Taxi Driver", name: "737 8th Ave - Show and Tell Theater" },
-  { id: 11, groupId: 2, lat: 40.77135, lng: -73.98206, film: "Taxi Driver", name: "Broadway &amp; W 63rd St" },
-  { id: 12, groupId: 2, lat: 40.75890, lng: -73.98513, film: "Taxi Driver", name: "Times Square" },
-  { id: 13, groupId: 2, lat: 40.75665, lng: -73.98766, film: "Taxi Driver", name: "Hilton Theater" },
-  { id: 14, groupId: 2, lat: 40.76381, lng: -73.98294, film: "Taxi Driver", name: "Ed Sullivan Theater" },
-  { id: 15, groupId: 2, lat: 40.74335, lng: -73.98413, film: "Taxi Driver", name: "Park Ave S &amp; E 28th St" },
-  { id: 16, groupId: 2, lat: 40.73225, lng: -73.98737, film: "Taxi Driver", name: "" },
-  { id: 17, groupId: 2, lat: 40.73202, lng: -73.98668, film: "Taxi Driver", name: "" },
-  { id: 18, groupId: 2, lat: 40.76804, lng: -73.98237, film: "Taxi Driver", name: "" },
-  { id: 19, groupId: 2, lat: 40.76142, lng: -73.97470, film: "Taxi Driver", name: "" },
-  { id: 20, groupId: 2, lat: 40.76741, lng: -73.98239, film: "Taxi Driver", name: "" },
-  { id: 21, groupId: 2, lat: 40.75847, lng: -73.98469, film: "Taxi Driver", name: "" },
-  { id: 22, groupId: 2, lat: 40.75657, lng: -73.99028, film: "Taxi Driver", name: "" }
-];
-*/
-
 var places = [
   {
     groupId: 1,
