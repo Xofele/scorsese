@@ -35,7 +35,6 @@ h1 {
 section {
   position: relative;
   width: 100%;
-
 }
 
 section#title {
@@ -44,13 +43,6 @@ section#title {
   background-image: url("../../img/36092-2.jpg"); background-size: cover;
 }
 
-section#map {
-  overflow: hidden;
-  height: 50vh;
-  margin-bottom: 24px;
-  background-color: #fff;
-  z-index: 100;
-}
 
 section#title h1 {
   display: block; position: relative;
@@ -71,11 +63,19 @@ section#title h1 {
   animation-fill-mode: forwards;
 }
 
-
-@-moz-keyframes animation1 {
-  0% { letter-spacing: 10rem; }
-  100% { letter-spacing: 0rem; }
+section#mapContainer {
+  position: relative;
+  overflow: hidden;
+  /*outline: solid 1px red;*/
+  background-color: #fff;
+  z-index: 100;
 }
+
+div#map {
+  height: 50vh;
+  margin-bottom: 4px;
+}
+
 
 section#text {
   padding-top: 45vh;
@@ -86,4 +86,10 @@ section#text h2 {
   font-family: Playball; font-size: 3rem; font-weight: 400;
   color: #f63;
   text-transform: none;
+}
+
+
+@-moz-keyframes animation1 {
+  0% { letter-spacing: 10rem; }
+  100% { letter-spacing: 0rem; }
 }
