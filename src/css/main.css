@@ -72,20 +72,22 @@ section#mapContainer {
 }
 
 div#map {
-  height: 50vh;
+  height: 40vh;
   margin-bottom: 4px;
 }
 
 
 section#text {
-  padding-top: 45vh;
+  /*padding-top: 45vh;*/
+  padding-top: 48px;
 }
 
 section#text h2 {
   padding-bottom: 1rem;
-  font-family: Playball; font-size: 3rem; font-weight: 400;
+  font-family: Playball; font-size: 3rem; font-weight: 600;
   color: #f63;
   text-transform: none;
+  text-shadow: 1px 1px 1px #333;
 }
 
 
@@ -93,3 +95,9 @@ section#text h2 {
   0% { letter-spacing: 10rem; }
   100% { letter-spacing: 0rem; }
 }
+
+
+.col1 { color: #5781fc !important; }
+.col2 { color: #fcf357 !important; }
+.col3 { color: #00e13c !important; }
+.col5 { color: #ff9900 !important; }
