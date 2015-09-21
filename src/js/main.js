@@ -149,18 +149,36 @@ var app = (function () {
     map.setZoom(map.getZoom() - 1); // http://stackoverflow.com/questions/6048975/google-maps-v3-how-to-calculate-the-zoom-level-for-a-given-bounds#answer-20905304
 
 
+/*
     var waypoints = $("[data-waypoint]").waypoint({
       offset: "85%",
       handler: function (dir) {
         var wp = $(this.element).data("waypoint"); // Waypoint trigger value
-        // console.log(wp, dir);
         if (wp === "init") {
           map.fitBounds(groups.latLngBounds);
           hiGroup();
         } else {
           hiGroup(wp);
-          map.fitBounds(_.find(groups, {id: wp}).latLngBounds);
-          $("body").css({ backgroundColor: _.find(groups, {id: wp}).color });
+          map.fitBounds(_.find(groups, {id: wp }).latLngBounds);
+          $("body").css({ backgroundColor: _.find(groups, {id: wp }).color });
+        }
+      }
+    });
+*/
+    var waypoints = $("[data-waypoint]").waypoint({
+      offset: "85%",
+      handler: function (dir) {
+        var wp = $(this.element).data("waypoint"); // Waypoint trigger value
+        if (dir === "up") wp = Math.max(wp - 1, 0);
+
+        if (wp === 0) {
+          $("body").css({ backgroundColor: "#fff" });
+          map.fitBounds(groups.latLngBounds);
+          hiGroup();
+        } else {
+          hiGroup(wp);
+          map.fitBounds(_.find(groups, {id: wp }).latLngBounds);
+          $("body").css({ backgroundColor: _.find(groups, {id: wp }).color });
         }
       }
     });
