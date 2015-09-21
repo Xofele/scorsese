@@ -47,18 +47,34 @@ data.places = [
   { id: 28, filmId: 3, lat: 40.76834, lng: -73.9882, name: "" },
   { id: 29, filmId: 3, lat: 40.76138, lng: -73.98527, name: "" },
 
-  // La Valse des pantins
-
+  // The King of Comedy
+  { id: 30, filmId: 4, lat: 40.75895, lng: -73.98493, name: "Times Square" },
+  { id: 31, filmId: 4, lat: 40.76207, lng: -73.9846, name: "Paramount Plaza" },
+  { id: 32, filmId: 4, lat: 40.75614, lng: -73.96571, name: "335 E 53rd St" },
 
   // After Hours
-  { id: 30, filmId: 5, lat: 40.74168, lng: -73.98695, name: "Metropolitan Life North Building" },
-  { id: 31, filmId: 5, lat: 40.71953, lng: -74.00064, name: "Crosby St &amp; Howard St" },
-  { id: 32, filmId: 5, lat: 40.75768, lng: -74.00059, name: "11th Ave &amp; W 37th St" },
-  { id: 33, filmId: 5, lat: 40.72589, lng: -74.00838, name: "Terminal Bar, Spring St &amp; Renwick St" },
-  { id: 34, filmId: 5, lat: 40.72806, lng: -74.0072, name: "Hudson St" },
-  { id: 35, filmId: 5, lat: 40.7223, lng: -73.99714, name: "Spring St" },
-  { id: 36, filmId: 5, lat: 40.72376, lng: -74.00069, name: "Appartement de Tom, 128 Spring St" },
-  { id: 37, filmId: 5, lat: 40.7209, lng: -74.00068, name: "Club Berlin, Broadway &amp; Grand St" }
+  { id: 33, filmId: 5, lat: 40.74168, lng: -73.98695, name: "Metropolitan Life North Building" },
+  { id: 34, filmId: 5, lat: 40.71953, lng: -74.00064, name: "Crosby St &amp; Howard St" },
+  { id: 35, filmId: 5, lat: 40.75768, lng: -74.00059, name: "11th Ave &amp; W 37th St" },
+  { id: 36, filmId: 5, lat: 40.72589, lng: -74.00838, name: "Terminal Bar, Spring St &amp; Renwick St" },
+  { id: 37, filmId: 5, lat: 40.72806, lng: -74.00720, name: "Hudson St" },
+  { id: 38, filmId: 5, lat: 40.72230, lng: -73.99714, name: "Spring St" },
+  { id: 39, filmId: 5, lat: 40.72376, lng: -74.00069, name: "Appartement de Tom, 128 Spring St" },
+  { id: 40, filmId: 5, lat: 40.72090, lng: -74.00068, name: "Club Berlin, Broadway &amp; Grand St" },
+
+  // Goodfellas
+  { id: 41, filmId: 6, lat: 40.76768, lng: -73.89987, name: "Airline Diner, 69-35 Astoria Blvd N, East Elmhurst" },
+  { id: 42, filmId: 6, lat: 40.77276, lng: -73.91525, name: "23-86 31st St, Long Island City" },
+  { id: 43, filmId: 6, lat: 40.70055, lng: -73.83287, name: "117-11 Hillside Ave, Jamaica" },
+  { id: 44, filmId: 6, lat: 40.95372, lng: -73.77996, name: "19 Alfred Ln, New Rochelle" },
+  { id: 45, filmId: 6, lat: 40.72951, lng: -73.88939, name: "73-20 Grand Ave, Maspeth" },
+  { id: 46, filmId: 6, lat: 40.72126, lng: -73.84248, name: "109-20 71st Rd, Forest Hills" },
+  { id: 47, filmId: 6, lat: 40.68979, lng: -73.86367, name: "87-48 78th St, Jamaica" },
+  { id: 48, filmId: 6, lat: 40.72282, lng: -73.91350, name: "Goodfellas Diner, 5626 Maspeth Ave, Maspeth" },
+  { id: 49, filmId: 6, lat: 40.70079, lng: -73.83235, name: "117-99 Babbage St, Richmond Hill" },
+  { id: 50, filmId: 6, lat: 40.67473, lng: -73.99777, name: "Brooklyn" }
+  // { id: , filmId: , lat: , lng: , name: "" }
+
 
 
 
@@ -69,7 +85,9 @@ data.groups = [ // Groups currently represent the films, but this could change
   { id: 1, places: [1, 2, 3, 4, 5, 6, 7] },
   { id: 2, places: [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22] },
   { id: 3, places: [23, 24, 25, 26, 27, 28, 29] },
-  { id: 5, places: [30, 31, 32, 33, 34, 35, 36, 37] }
+  { id: 4, places: [30, 31, 32] },
+  { id: 5, places: [33, 34, 35, 36, 37, 38, 39, 40] },
+  { id: 6, places: [41, 42, 43, 44, 45, 46, 47, 48, 49, 50] }
 ];
 
 
