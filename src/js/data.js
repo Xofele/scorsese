@@ -22,6 +22,7 @@ data.places = [
   { id: 5, filmId: 1, lat: 40.7193, lng: -73.99732, name: "Mulberry St" },
   { id: 6, filmId: 1, lat: 40.72075, lng: -73.9971, name: "394 Broome St" },
   { id: 7, filmId: 1, lat: 40.7312, lng: -74.00167, name: "323 6th Ave - Waverly Theater" },
+
   // Taxi Driver
   { id: 8, filmId: 2, lat: 40.76987, lng: -73.99031, name: "W57th Street" },
   { id: 9, filmId: 2, lat: 40.76041, lng: -73.98745, name: "8th Ave &amp; W47th St." },
@@ -38,6 +39,7 @@ data.places = [
   { id: 20, filmId: 2, lat: 40.76741, lng: -73.98239, name: "" },
   { id: 21, filmId: 2, lat: 40.75847, lng: -73.98469, name: "" },
   { id: 22, filmId: 2, lat: 40.75657, lng: -73.99028, name: "" },
+
   // Raging Bull
   { id: 23, filmId: 3, lat: 40.81637, lng: -73.91529, name: "" },
   { id: 24, filmId: 3, lat: 40.73399, lng: -73.98891, name: "" },

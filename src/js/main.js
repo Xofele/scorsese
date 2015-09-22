@@ -9,24 +9,6 @@ icons = [
   { id: 6, color: "#e661ac", name: "pink", url: ["//maps.google.com/mapfiles/ms/icons/pink.png", "//maps.google.com/mapfiles/ms/icons/pink-dot.png"] }
 ];
 
-
-/*
-var iconsUrl = _.map(
-  [null, "blue", "yellow", "green", "lightblue", "orange", "pink", "purple", "red"],
-  function (item) {
-    if (item) {
-      return ["//maps.google.com/mapfiles/ms/icons/" + item + ".png", "//maps.google.com/mapfiles/ms/icons/" + item + "-dot.png"];
-    }
-    return null;
-  }
-);
-*/
-
-
-
-
-
-
 var app = (function () {
   "use strict";
   var places = data.places;
@@ -92,7 +74,7 @@ var app = (function () {
       });
     });
 
-    $("section#text").on("click", "a", function (e) {
+    $("section#text").on("click", ".link", function (e) {
       var $el = $(e.target);
       var id = $el.data("link");
       var pl = _.find(places, { id: id });
@@ -166,19 +148,21 @@ var app = (function () {
     });
 */
     var waypoints = $("[data-waypoint]").waypoint({
-      offset: "85%",
+      offset: "75%",
       handler: function (dir) {
         var wp = $(this.element).data("waypoint"); // Waypoint trigger value
         if (dir === "up") wp = Math.max(wp - 1, 0);
 
         if (wp === 0) {
-          $("body").css({ backgroundColor: "#fff" });
+          // $("#map").css({ borderColor: "#fff" });
+          // $("body").css({ backgroundColor: "#fff" });
           map.fitBounds(groups.latLngBounds);
           hiGroup();
         } else {
           hiGroup(wp);
           map.fitBounds(_.find(groups, {id: wp }).latLngBounds);
-          $("body").css({ backgroundColor: _.find(groups, {id: wp }).color });
+          // $("#map").css({ borderColor: _.find(groups, {id: wp }).color });
+          // $("body").css({ backgroundColor: _.find(groups, {id: wp }).color });
         }
       }
     });
