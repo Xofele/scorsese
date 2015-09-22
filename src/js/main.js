@@ -4,9 +4,11 @@ icons = [
   { id: 1, color: "#5781fc", name: "blue", url: ["//maps.google.com/mapfiles/ms/icons/blue.png", "//maps.google.com/mapfiles/ms/icons/blue-dot.png"] },
   { id: 2, color: "#fcf357", name: "yellow", url: ["//maps.google.com/mapfiles/ms/icons/yellow.png", "//maps.google.com/mapfiles/ms/icons/yellow-dot.png"] },
   { id: 3, color: "#00e13c", name: "green", url: ["//maps.google.com/mapfiles/ms/icons/green.png", "//maps.google.com/mapfiles/ms/icons/green-dot.png"] },
-  { id: 4, color: "#93d7e8", name: "lightblue", url: ["//maps.google.com/mapfiles/ms/icons/lightblue.png", "//maps.google.com/mapfiles/ms/icons/lightblue-dot.png"] },
+  { id: 4, color: "#93d7e8", name: "lightblue", url: ["//maps.google.com/mapfiles/ms/icons/lightblue.png", "//maps.google.com/mapfiles/ms/icons/ltblue-dot.png"] },
   { id: 5, color: "#ff9900", name: "orange", url: ["//maps.google.com/mapfiles/ms/icons/orange.png", "//maps.google.com/mapfiles/ms/icons/orange-dot.png"] },
-  { id: 6, color: "#e661ac", name: "pink", url: ["//maps.google.com/mapfiles/ms/icons/pink.png", "//maps.google.com/mapfiles/ms/icons/pink-dot.png"] }
+  { id: 6, color: "#e661ac", name: "pink", url: ["//maps.google.com/mapfiles/ms/icons/pink.png", "//maps.google.com/mapfiles/ms/icons/pink-dot.png"] },
+  { id: 7, color: "#8e67fd", name: "purple", url: ["//maps.google.com/mapfiles/ms/icons/purple.png", "//maps.google.com/mapfiles/ms/icons/purple-dot.png"] },
+  { id: 8, color: "#fd7567", name: "red", url: ["//maps.google.com/mapfiles/ms/icons/red.png", "//maps.google.com/mapfiles/ms/icons/red-dot.png"] }
 ];
 
 var app = (function () {
@@ -154,14 +156,14 @@ var app = (function () {
         if (dir === "up") wp = Math.max(wp - 1, 0);
 
         if (wp === 0) {
-          // $("#map").css({ borderColor: "#fff" });
+          $("#map").css({ borderColor: "#fff" });
           // $("body").css({ backgroundColor: "#fff" });
           map.fitBounds(groups.latLngBounds);
           hiGroup();
         } else {
           hiGroup(wp);
           map.fitBounds(_.find(groups, {id: wp }).latLngBounds);
-          // $("#map").css({ borderColor: _.find(groups, {id: wp }).color });
+          $("#map").css({ borderColor: _.find(groups, {id: wp }).color });
           // $("body").css({ backgroundColor: _.find(groups, {id: wp }).color });
         }
       }

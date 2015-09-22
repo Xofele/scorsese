@@ -74,7 +74,16 @@ data.places = [
   { id: 47, filmId: 6, lat: 40.68979, lng: -73.86367, name: "87-48 78th St, Jamaica" },
   { id: 48, filmId: 6, lat: 40.72282, lng: -73.91350, name: "Goodfellas Diner, 5626 Maspeth Ave, Maspeth" },
   { id: 49, filmId: 6, lat: 40.70079, lng: -73.83235, name: "117-99 Babbage St, Richmond Hill" },
-  { id: 50, filmId: 6, lat: 40.67473, lng: -73.99777, name: "Brooklyn" }
+  { id: 50, filmId: 6, lat: 40.67473, lng: -73.99777, name: "Brooklyn" },
+
+  // The Age of Innocence
+  { id: 51, filmId: 7, lat: 40.73769, lng: -73.9867, name: "15 Gramercy Park S, New York" },
+  { id: 52, filmId: 7, lat: 40.86352, lng: -73.88209, name: "Enid A. Haupt Conservatory" }
+  // { id: , filmId: , lat: , lng: , name: "" }
+  // { id: , filmId: , lat: , lng: , name: "" }
+  // { id: , filmId: , lat: , lng: , name: "" }
+
+
   // { id: , filmId: , lat: , lng: , name: "" }
 
 
@@ -89,7 +98,8 @@ data.groups = [ // Groups currently represent the films, but this could change
   { id: 3, places: [23, 24, 25, 26, 27, 28, 29] },
   { id: 4, places: [30, 31, 32] },
   { id: 5, places: [33, 34, 35, 36, 37, 38, 39, 40] },
-  { id: 6, places: [41, 42, 43, 44, 45, 46, 47, 48, 49, 50] }
+  { id: 6, places: [41, 42, 43, 44, 45, 46, 47, 48, 49, 50] },
+  { id: 7, places: [51, 52] }
 ];
 
 

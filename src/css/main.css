@@ -73,7 +73,7 @@ section#mapContainer {
 div#map {
   height: 40vh;
   /*margin-bottom: 4px;*/
-  border-bottom: solid 4px #fff;
+  border-bottom: solid 8px #fff;
   -webkit-transition: border-color 0.35s linear;
   -moz-transition: border-color 0.35s linear;
   -o-transition: border-color 0.35s linear;
@@ -204,3 +204,9 @@ div[data-waypoint="5"] .link:hover { background-color: rgba(255, 153, 0, 1); }
 
 div[data-waypoint="6"] .link { background-color: rgba(230, 97, 172, 0.35); }
 div[data-waypoint="6"] .link:hover { background-color: rgba(230, 97, 172, 1); }
+
+div[data-waypoint="7"] .link { background-color: rgba(142, 103, 256, 0.35); }
+div[data-waypoint="7"] .link:hover { background-color: rgba(142, 103, 256, 1); }
+
+div[data-waypoint="8"] .link { background-color: rgba(253, 117, 103, 0.35); }
+div[data-waypoint="8"] .link:hover { background-color: rgba(253, 117, 103, 1); }
