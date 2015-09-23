@@ -49,7 +49,7 @@ data.places = [
   { id: 28, filmId: 3, lat: 40.76834, lng: -73.9882, name: "" },
   { id: 29, filmId: 3, lat: 40.76138, lng: -73.98527, name: "" },
 
-  // The King of Comedy
+  // La Valse des pantins
   { id: 30, filmId: 4, lat: 40.75895, lng: -73.98493, name: "Times Square" },
   { id: 31, filmId: 4, lat: 40.76207, lng: -73.9846, name: "Paramount Plaza" },
   { id: 32, filmId: 4, lat: 40.75614, lng: -73.96571, name: "335 E 53rd St" },
@@ -78,13 +78,54 @@ data.places = [
 
   // The Age of Innocence
   { id: 51, filmId: 7, lat: 40.73769, lng: -73.9867, name: "15 Gramercy Park S, New York" },
-  { id: 52, filmId: 7, lat: 40.86352, lng: -73.88209, name: "Enid A. Haupt Conservatory" }
-  // { id: , filmId: , lat: , lng: , name: "" }
-  // { id: , filmId: , lat: , lng: , name: "" }
-  // { id: , filmId: , lat: , lng: , name: "" }
+  { id: 52, filmId: 7, lat: 40.86352, lng: -73.88209, name: "Enid A. Haupt Conservatory" },
+  { id: 53, filmId: 7, lat: 40.71435, lng: -74.00047, name: "Five Points" },
+  { id: 54, filmId: 7, lat: 40.70608, lng: -73.99686, name: "Brooklyn Bridge" },
+  { id: 55, filmId: 7, lat: 40.74844, lng: -73.98565, name: "Empire State Building" },
+  { id: 56, filmId: 7, lat: 40.71902, lng: -73.99649, name: "Mott Street" },
+
+  // À tombeau ouvert
+  { id: 57, filmId: 8, lat: 40.75854, lng: -73.98883, name: "" },
+  { id: 58, filmId: 8, lat: 40.76839, lng: -73.99281, name: "" },
+  { id: 59, filmId: 8, lat: 40.75656, lng: -73.99027, name: "" },
+  { id: 60, filmId: 8, lat: 40.73357, lng: -74.00274, name: "" },
+  { id: 61, filmId: 8, lat: 40.76375, lng: -73.99181, name: "" },
+  { id: 62, filmId: 8, lat: 40.75493, lng: -73.98401, name: "" },
+  { id: 63, filmId: 8, lat: 40.71955, lng: -73.98674, name: "" },
+  { id: 64, filmId: 8, lat: 40.73855, lng: -73.97540, name: "" },
+
+  // Les Infiltrés
+  { id: 65, filmId: 9, lat: 40.73801, lng: -73.99531, name: "" },
+  { id: 66, filmId: 9, lat: 40.80522, lng: -73.79151, name: "" },
+  { id: 67, filmId: 9, lat: 40.65004, lng: -73.99181, name: "" },
+  { id: 68, filmId: 9, lat: 40.64190, lng: -74.01692, name: "" },
+  { id: 69, filmId: 9, lat: 40.76035, lng: -73.98896, name: "" },
+  { id: 70, filmId: 9, lat: 40.59434, lng: -73.92995, name: "" },
+  { id: 71, filmId: 9, lat: 40.68422, lng: -74.00183, name: "" },
+  { id: 72, filmId: 9, lat: 40.59993, lng: -73.91439, name: "" },
+
+  // Le Loup de Wall Street
+  { id: 73, filmId: 10, lat: 40.76021, lng: -73.97677, name: "" },
+  { id: 74, filmId: 10, lat: 40.85186, lng: -73.56462, name: "" },
+  { id: 75, filmId: 10, lat: 40.70687, lng: -74.01126, name: "" },
+  { id: 76, filmId: 10, lat: 40.75901, lng: -73.98447, name: "" },
+  { id: 77, filmId: 10, lat: 40.72703, lng: -73.86385, name: "" },
+  { id: 78, filmId: 10, lat: 41.01093, lng: -73.84652, name: "" },
+  { id: 79, filmId: 10, lat: 40.97721, lng: -73.74199, name: "" },
+  { id: 80, filmId: 10, lat: 40.85176, lng: -73.71874, name: "" },
+  { id: 81, filmId: 10, lat: 40.76250, lng: -73.97385, name: "" },
+  { id: 82, filmId: 10, lat: 40.75771, lng: -73.96609, name: "" },
+  { id: 83, filmId: 10, lat: 40.75831, lng: -73.97186, name: "" },
+  { id: 84, filmId: 10, lat: 40.90899, lng: -73.54416, name: "" },
+  { id: 85, filmId: 10, lat: 40.79388, lng: -73.93440, name: "" },
+  { id: 86, filmId: 10, lat: 40.71215, lng: -74.01700, name: "" },
+  { id: 87, filmId: 10, lat: 40.96904, lng: -73.95493, name: "" },
+  { id: 88, filmId: 10, lat: 40.98562, lng: -73.70661, name: "" },
+  { id: 89, filmId: 10, lat: 40.75482, lng: -74.00706, name: "" }
 
 
-  // { id: , filmId: , lat: , lng: , name: "" }
+
+
 
 
 
@@ -99,8 +140,12 @@ data.groups = [ // Groups currently represent the films, but this could change
   { id: 4, places: [30, 31, 32] },
   { id: 5, places: [33, 34, 35, 36, 37, 38, 39, 40] },
   { id: 6, places: [41, 42, 43, 44, 45, 46, 47, 48, 49, 50] },
-  { id: 7, places: [51, 52] }
+  { id: 7, places: [51, 52, 53, 54, 55, 56] },
+  { id: 8, places: [57, 58, 59, 60, 61, 62, 63, 64] },
+  { id: 9, places: [65, 66, 67, 68, 69, 70, 71, 72] },
+  { id: 10, places: [73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89] }
 ];
+
 
 
 // Transformations

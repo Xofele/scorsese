@@ -8,7 +8,12 @@ icons = [
   { id: 5, color: "#ff9900", name: "orange", url: ["//maps.google.com/mapfiles/ms/icons/orange.png", "//maps.google.com/mapfiles/ms/icons/orange-dot.png"] },
   { id: 6, color: "#e661ac", name: "pink", url: ["//maps.google.com/mapfiles/ms/icons/pink.png", "//maps.google.com/mapfiles/ms/icons/pink-dot.png"] },
   { id: 7, color: "#8e67fd", name: "purple", url: ["//maps.google.com/mapfiles/ms/icons/purple.png", "//maps.google.com/mapfiles/ms/icons/purple-dot.png"] },
-  { id: 8, color: "#fd7567", name: "red", url: ["//maps.google.com/mapfiles/ms/icons/red.png", "//maps.google.com/mapfiles/ms/icons/red-dot.png"] }
+  { id: 8, color: "#fd7567", name: "red", url: ["//maps.google.com/mapfiles/ms/icons/red.png", "//maps.google.com/mapfiles/ms/icons/red-dot.png"] },
+
+  { id: 9, color: "#fd7567", name: "red", url: ["//maps.google.com/mapfiles/ms/icons/red.png", "//maps.google.com/mapfiles/ms/icons/red-dot.png"] },
+  { id: 10, color: "#fd7567", name: "red", url: ["//maps.google.com/mapfiles/ms/icons/red.png", "//maps.google.com/mapfiles/ms/icons/red-dot.png"] }
+
+
 ];
 
 var app = (function () {
