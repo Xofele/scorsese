@@ -176,6 +176,12 @@ p:first-child:first-letter {}
   transition: 0.15s;
 }
 
+
+.image {
+  background-color: #69f;
+  height: 100vh;
+}
+
 /*.link:hover { background-color: #999 !important; }*/
 
 /*
