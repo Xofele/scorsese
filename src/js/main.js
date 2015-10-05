@@ -60,16 +60,16 @@ $(function() {
     }
 
 
-    // if (item.elemMapContainer) {
-    //   new ScrollMagic.Scene({
-    //     triggerElement: item.elemText,
-    //     triggerHook: 1,
-    //     duration: 0
-    //   })
-    //   .setPin(item.elemMapContainer, { pushFollowers: false })
-    //   .addIndicators()
-    //   .addTo(ctrl);
-    // }
+    if (item.elemMapContainer) {
+      new ScrollMagic.Scene({
+        triggerElement: item.elemText,
+        triggerHook: 0.5,
+        duration: 0
+      })
+      .setPin(item.elemMapContainer, { pushFollowers: false })
+      .addIndicators()
+      .addTo(ctrl);
+    }
 
 
 
