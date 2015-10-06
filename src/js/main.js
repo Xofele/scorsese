@@ -1,9 +1,6 @@
 $(function() {
+
   var ctrl = new ScrollMagic.Controller();
-
-
-  // var elemMap = $("<div class='map'></div>").appendTo(document.querySelector(".mapContainer"))[0];
-
   var gm = google.maps;
 
   var mapOptions = {
@@ -69,14 +66,41 @@ $(function() {
     }
 
     if (item.elemMapContainer) {
+
       item.elemMap = $("<div class='map'></div>").appendTo(item.elemMapContainer)[0];
+      // createMap(item.elemMap, )
+
       item.map = new gm.Map(item.elemMap, mapOptions); // Instantiate map
       $(item.elemMapContainer).sticky(); // NB: use sticky.js to avoid issues with nested Magic Scroll pins
     }
 
-
-
-
   });
 
 });
+
+
+
+
+
+var map = (function () {
+  var gm = google.maps;
+  var options = {
+    center: new gm.LatLng(40.766300, -73.977734),
+    disableDefaultUI: true,
+    scrollwheel: false,
+    styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2e5d4"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#c5dac6"}]},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{"featureType":"road","elementType":"all","stylers":[{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#c5c6c6"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#e4d7c6"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#fbfaf7"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"color":"#acbcc9"}]}], // https://snazzymaps.com/style/1/pale-dawn
+    zoom: 13,
+    zoomControl: true
+  }
+
+
+
+
+  return {
+    create: create
+  };
+
+})();
+
+
+
