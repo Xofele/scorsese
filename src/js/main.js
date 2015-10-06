@@ -57,30 +57,22 @@ $(function() {
     .setTween(tween)
     .addTo(ctrl);
 
+
     if (items[i + 1]) {
-      new ScrollMagic.Scene({
+      new ScrollMagic.Scene({ // When the next splash is about to enter from the bottom, we pin the text so the splash slides on top of it.
         triggerElement: items[i + 1].elemSplash,
         triggerHook: 1,
         duration: "100%"
       })
-      .setPin(item.elemText, { pushFollowers: false })
-      .addTo(ctrl);      
+      .setPin(item.elemFilm, { pushFollowers: false })
+      .addTo(ctrl);
     }
 
     if (item.elemMapContainer) {
       item.elemMap = $("<div class='map'></div>").appendTo(item.elemMapContainer)[0];
       item.map = new gm.Map(item.elemMap, mapOptions); // Instantiate map
-      new ScrollMagic.Scene({
-        triggerElement: item.elemText,
-        // triggerHook: 0,
-        triggerHook: 0.5,
-        duration: 0
-      })
-      .setPin(item.elemMapContainer, { pushFollowers: true })
-      // .addIndicators()
-      .addTo(ctrl);
+      $(item.elemMapContainer).sticky(); // NB: use sticky.js to avoid issues with nested Magic Scroll pins
     }
-
 
 
 
