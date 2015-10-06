@@ -32,7 +32,7 @@ Id|Film|Lat|Lng|Nom|Remarque
 26|Raging Bull|40.73176|-73.98913|"Webster Hall, 125 E 11th St"|
 27|Raging Bull|40.76435|-73.97189|"Copacabana, 10 E 60th St"|
 28|Raging Bull|40.76834|-73.98820|"447 W 56th St"|
-29|Raging Bull|40.76138|-73.98527|"225 W 49th St"|
+29|Raging Bull|40.5665|-73.86484|"Pelham Parkway"|
 30|La Valse des pantins|40.75895|-73.98493|"Times Square"|
 31|La Valse des pantins|40.76207|-73.9846|"Paramount Plaza"|
 32|La Valse des pantins|40.75614|-73.96571|"335 E 53rd St"|
